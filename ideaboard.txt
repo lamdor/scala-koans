@@ -1,4 +1,5 @@
 Test asserts - Message, bool, etc.
+Nothing values
 Tuples - syntax
 Pattern Matching
 Functions returning functions
