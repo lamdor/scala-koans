@@ -5,5 +5,5 @@ import org.junit.runner.RunWith
 
 @RunWith(classOf[JUnitRunner])
 class PathToEnlightenmentTest extends Suite {
-    override def nestedSuites = List(new AboutAsserts, new AboutArrays)
+    override def nestedSuites = List(/*new AboutAsserts, new AboutEmptyValues,*/ new AboutSequences)
 }
