@@ -1,10 +1,7 @@
 package org.functionalkoans.forscala
-import org.junit.Test
 import org.scalatest.matchers.ShouldMatchers
 import support.BlankValues.__
 import support.KoanSuite
-import org.scalatest.FunSuite
-import org.scalatest.Spec
 
 class AboutAsserts extends KoanSuite with ShouldMatchers {
 
