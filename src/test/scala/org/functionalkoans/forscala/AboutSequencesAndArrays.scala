@@ -6,13 +6,13 @@ import org.scalatest.matchers.ShouldMatchers
 
 class AboutSequencesAndArrays extends KoanSuite with ShouldMatchers {
 
-  koan("A list can be converted to an array") {
+  koan ("A list can be converted to an array") {
     val l = List(1,2,3)
     val a = l.toArray
     a should equal (Array(1,2,3))
   }
 
-  koan("Any sequence can be converted to a list") {
+  koan ("Any sequence can be converted to a list") {
     val a = Array(1,2,3)
     val s = a.toSeq
     val l = s.toList
