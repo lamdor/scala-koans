@@ -1,4 +1,4 @@
-package org.functionalkoans.forscala
+package org.scalakoans
 import org.scalatest.matchers.ShouldMatchers
 import support.BlankValues.__
 import support.KoanSuite

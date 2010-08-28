@@ -1,4 +1,4 @@
-package org.functionalkoans.forscala
+package org.scalakoans
 import org.scalatest.matchers.ShouldMatchers
 import support.BlankValues.__
 import support.KoanSuite
@@ -21,5 +21,5 @@ class AboutValAndVar extends KoanSuite with ShouldMatchers {
     // a = 7
     // a should be (5)
   }
-  
+
 }

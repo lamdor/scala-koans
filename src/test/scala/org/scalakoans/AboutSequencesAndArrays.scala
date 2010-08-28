@@ -1,4 +1,4 @@
-package org.functionalkoans.forscala
+package org.scalakoans
 
 import support.KoanSuite
 import support.BlankValues._

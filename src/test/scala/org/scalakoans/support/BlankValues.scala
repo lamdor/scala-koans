@@ -1,4 +1,4 @@
-package org.functionalkoans.forscala.support
+package org.scalakoans.support
 
 object BlankValues {
     class ReplaceWithCorrectException extends Exception

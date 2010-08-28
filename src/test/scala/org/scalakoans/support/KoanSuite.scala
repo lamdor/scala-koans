@@ -1,4 +1,4 @@
-package org.functionalkoans.forscala.support
+package org.scalakoans.support
 import org.scalatest.Reporter
 import org.scalatest.Stopper
 import org.scalatest.Distributor
@@ -10,7 +10,7 @@ import org.scalatest.events.TestSucceeded
 
 trait KoanSuite extends FunSuite {
     override def runTests(testName : Option[String], reporter : Reporter, stopper : Stopper, filter : Filter,
-                         configMap : Map[String, Any], distributor : Option[Distributor], tracker : Tracker) {       
+                         configMap : Map[String, Any], distributor : Option[Distributor], tracker : Tracker) {
 
        if (testName == null)
           throw new NullPointerException("testName was null")
