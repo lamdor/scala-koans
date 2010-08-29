@@ -5,6 +5,7 @@
 * Things to do
 *** TODO sbt commands for next
 *** TODO full dist with libs
+*** TODO simple package object for koan import
 * Topics
 *** Test asserts - Message, bool, etc.
 *** Nothing values
