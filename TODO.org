@@ -11,12 +11,19 @@
     :LOGBOOK:
     - State "DONE"       from "TODO"       [2010-09-06 Mon 11:35]
     :END:
+*** DONE "trace off" (to stop logging backtraces) by default
+    CLOSED: [2010-09-06 Mon 18:06]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-06 Mon 18:06]
+    :END:
 *** TODO meditate equivalent to pending
 ***** force the student to look at the code
-*** TODO sbt commands for next
+*** TODO work through topics
 *** TODO full dist with libs
-*** TODO "trace off" (to stop logging backtraces) by default
-*** TODO simple package object for koan import
+*** TODO show file and line number as part of meditation number
+*** TODO sbt commands for next
+*** CANCELED simple package object for koan import
+    CLOSED: [2010-09-06 Mon 17:54]
 *** TODO README w/ instructions
 * Topics
 *** Test asserts - Message, bool, etc.
