@@ -6,7 +6,13 @@
   :PROPERTIES:
   :ID:       23E57057-6ADF-4E95-A9C3-16E6AF6217F8
   :END:
-*** TODO __ is a nicer pending
+*** DONE __ is a nicer pending
+    CLOSED: [2010-09-06 Mon 11:35]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-06 Mon 11:35]
+    :END:
+*** TODO meditate equivalent to pending
+***** force the student to look at the code
 *** TODO sbt commands for next
 *** TODO full dist with libs
 *** TODO "trace off" (to stop logging backtraces) by default
@@ -14,29 +20,47 @@
 *** TODO README w/ instructions
 * Topics
 *** Test asserts - Message, bool, etc.
-*** Nothing values
+*** imports / package
+***** package of this test is __
+***** package namespace like with "package {...}"
+***** imports are relative
+*** assignment
+***** type inference
+*** literals
+***** integers
+***** floats
+***** symbols
 *** Tuples - syntax
-*** Pattern Matching
-*** Functions returning functions
-*** Functions taking functions
-*** if expressions
-*** for comprehensions
-*** immutability/side effects
-*** state identity lifetime
-*** collections array, list
+*** collections array, list, map
+*** functions
+***** Functions returning functions
+***** Functions taking functions
+***** call by name
+***** functions can be defined inside functions (anywhere)
+***** return type is sometimes not needed
+***** types required on parameters
+***** dot not always required
+***** parens not always required
+*** operators
+***** can't be reserved words
 *** map, reduce, filter
+*** if expressions
+*** Pattern Matching
+*** currying / partial application / multiple argument lists
+*** exceptions and try/catch
+***** Nothing values
+*** option types
+*** for comprehensions
 *** classes
-*** lists / cons
-*** memoization
-*** lazy sequences
-*** recursion
+***** memoization
+***** lazy val
+***** method override
+***** visibility
+*** abstract classes
+***** parameterized types
+*** case classes
 *** traits / mixins
-*** recrusive list processing
-*** lambda
-*** currying / pfa
-*** null option types
-*** mutation
-*** type signatures
-*** reflection
-*** scala properties - set date / use earlier date
-
+*** singleton objects
+*** package objects
+*** actors
+*** xml
