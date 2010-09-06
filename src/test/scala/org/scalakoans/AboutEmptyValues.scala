@@ -1,11 +1,8 @@
 package org.scalakoans
 
 import support.KoanSuite
-import support.BlankValues._
-import org.scalatest.matchers.ShouldMatchers
 
-
-class AboutEmptyValues extends KoanSuite with ShouldMatchers {
+class AboutEmptyValues extends KoanSuite {
 
     test ("None equals None") {
         assert(None == __ )

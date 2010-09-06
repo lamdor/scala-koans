@@ -1,11 +1,9 @@
 package org.scalakoans
 
 import support.KoanSuite
-import support.BlankValues._
-import org.scalatest.matchers.ShouldMatchers
 import java.util.Date
 
-class AboutTuples extends KoanSuite with ShouldMatchers {
+class AboutTuples extends KoanSuite {
 
   koan ("Tuples can be created easily") {
     val tuple = ("apple", "dog")

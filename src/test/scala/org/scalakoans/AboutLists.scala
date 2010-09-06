@@ -1,10 +1,8 @@
 package org.scalakoans
 
 import support.KoanSuite
-import support.BlankValues._
-import org.scalatest.matchers.ShouldMatchers
 
-class AboutLists extends KoanSuite with ShouldMatchers {
+class AboutLists extends KoanSuite {
 
     koan ("Nil lists are identical, even of different types") {
         val a : List[String] = Nil

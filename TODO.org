@@ -3,9 +3,15 @@
 #+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 
 * Things to do
+  :PROPERTIES:
+  :ID:       23E57057-6ADF-4E95-A9C3-16E6AF6217F8
+  :END:
+*** TODO __ is a nicer pending
 *** TODO sbt commands for next
 *** TODO full dist with libs
+*** TODO "trace off" (to stop logging backtraces) by default
 *** TODO simple package object for koan import
+*** TODO README w/ instructions
 * Topics
 *** Test asserts - Message, bool, etc.
 *** Nothing values

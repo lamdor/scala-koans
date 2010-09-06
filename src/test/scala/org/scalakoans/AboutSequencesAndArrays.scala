@@ -1,10 +1,8 @@
 package org.scalakoans
 
 import support.KoanSuite
-import support.BlankValues._
-import org.scalatest.matchers.ShouldMatchers
 
-class AboutSequencesAndArrays extends KoanSuite with ShouldMatchers {
+class AboutSequencesAndArrays extends KoanSuite {
 
   koan ("A list can be converted to an array") {
     val l = List(1,2,3)
