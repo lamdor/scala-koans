@@ -40,12 +40,20 @@
 ***** val
 ***** var
 ***** type inference
-*** literals
+*** DONE literals
+    CLOSED: [2010-09-07 Tue 21:26]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-07 Tue 21:26]
+    :END:
 ***** integers
 ***** floats
 ***** symbols
 ***** strings
-*** Tuples - syntax
+*** DONE Tuples - syntax
+    CLOSED: [2010-09-07 Tue 21:26]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-07 Tue 21:26]
+    :END:
 ***** tuple assignment
 ***** Pair = Tuple2
 *** classes
