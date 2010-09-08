@@ -10,10 +10,8 @@ trait KoanSuite extends FunSuite with ShouldMatchers {
 
   def meditate() = pending
 
-  val __ = new Matcher[Any] {
-    def apply(left: Any) = {
-      MatchResult(false, "meditate", "mediate")
-    }
+  def  __ : Matcher[Any] = {
+    throw new TestPendingException
   }
 
   protected class ___ extends Exception {
