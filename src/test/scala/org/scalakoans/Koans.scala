@@ -5,6 +5,7 @@ import org.scalatest._
 class Koans extends Suite {
   override def nestedSuites = List(
     new AboutAsserts,
-    new AboutValAndVar
+    new AboutValAndVar,
+    new AboutLiterals
   )
 }
