@@ -16,6 +16,7 @@
     :LOGBOOK:
     - State "DONE"       from "TODO"       [2010-09-06 Mon 18:06]
     :END:
+*** TODO refine topic list
 *** TODO meditate equivalent to pending
 ***** force the student to look at the code
 *** TODO work through topics
@@ -26,19 +27,48 @@
     CLOSED: [2010-09-06 Mon 17:54]
 *** TODO README w/ instructions
 * Topics
-*** Test asserts - Message, bool, etc.
-*** imports / package
-***** package of this test is __
-***** package namespace like with "package {...}"
-***** imports are relative
-*** assignment
+*** DONE Test asserts - Message, bool, etc.
+    CLOSED: [2010-09-07 Tue 20:26]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-07 Tue 20:26]
+    :END:
+*** DONE val and var
+    CLOSED: [2010-09-07 Tue 20:26]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-07 Tue 20:26]
+    :END:
+***** val
+***** var
 ***** type inference
 *** literals
 ***** integers
 ***** floats
 ***** symbols
+***** strings
 *** Tuples - syntax
-*** collections array, list, map
+***** tuple assignment
+***** Pair = Tuple2
+*** classes
+***** constructor
+***** passing values up to super's constructor
+***** defining methods
+***** lazy val
+***** memoization
+***** method override
+***** visibility
+*** imports / package
+***** package of this test is __
+***** package namespace like with "package {...}"
+***** imports are relative
+*** singleton objects
+*** collections
+***** array
+******* corresponds to java array
+***** list
+******* immutable
+******* Nil
+***** map
+******* Map of pairs
 *** functions
 ***** Functions returning functions
 ***** Functions taking functions
@@ -48,26 +78,43 @@
 ***** types required on parameters
 ***** dot not always required
 ***** parens not always required
+***** Method apply
 *** operators
 ***** can't be reserved words
 *** map, reduce, filter
 *** if expressions
 *** Pattern Matching
+***** match on value
+***** match on type
+***** match on tuple
+***** wildcard match
+***** match on unapply
+***** match with guards
+***** binding on nested variables - case p @ Person(first, last)
+*** traits / mixins
+***** defining
+***** mixxing in
+***** constructor order
+***** method order
 *** currying / partial application / multiple argument lists
+***** partialing applying a multiple argument func
+***** partial an instance's method
+*** case classes
+***** match on case class
 *** exceptions and try/catch
 ***** Nothing values
 *** option types
 *** for comprehensions
-*** classes
-***** memoization
-***** lazy val
-***** method override
-***** visibility
+*** regular expressions
+***** match on regular expression
+
+*** other looping contstructs
+***** while
+***** do while
+***** for (i <- 1 to 20)
 *** abstract classes
 ***** parameterized types
-*** case classes
-*** traits / mixins
-*** singleton objects
+*** enumerations
 *** package objects
 *** actors
 *** xml

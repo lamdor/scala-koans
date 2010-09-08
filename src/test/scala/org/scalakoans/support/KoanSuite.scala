@@ -8,6 +8,8 @@ trait KoanSuite extends FunSuite with ShouldMatchers {
 
   def koan(name : String)(fun: => Unit) = test(name)(fun)
 
+  def meditate() = pending
+
   val __ = new Matcher[Any] {
     def apply(left: Any) = {
       MatchResult(false, "meditate", "mediate")

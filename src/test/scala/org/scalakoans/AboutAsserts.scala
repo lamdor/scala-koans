@@ -20,7 +20,7 @@ class AboutAsserts extends KoanSuite {
     val v1 = 4
     val v2 = 3
 
-    assert(v1 === v2)
+    v1 should be(v2)
   }
 
   koan ("sometimes we expect you to fill in the values") {
