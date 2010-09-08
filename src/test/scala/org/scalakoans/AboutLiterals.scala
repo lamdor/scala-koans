@@ -9,7 +9,7 @@ class AboutLiterals extends KoanSuite {
     i.isInstanceOf[Int] should __
   }
 
-  koan("float literals") {
+  koan("double literals") {
     val f = 2.0
 
     f.isInstanceOf[___] should be(true)
