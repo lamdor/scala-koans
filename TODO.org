@@ -56,7 +56,15 @@
     :END:
 ***** tuple assignment
 ***** Pair = Tuple2
-*** classes
+*** TODO methods
+***** parameter type declarations
+***** returns
+***** return type
+***** return type necessary if recursive
+***** nested method
+***** { } not always necessary
+*** TODO classes
+***** creating a class
 ***** constructor
 ***** passing values up to super's constructor
 ***** defining methods
