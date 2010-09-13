@@ -10,6 +10,9 @@ class AboutMethods extends KoanSuite {
     }
 
     add2(2) should __
+
+    meditate
+    // add3(2) should be(5)
   }
 
   koan ("return not always necssary") {
@@ -55,7 +58,7 @@ class AboutMethods extends KoanSuite {
     x should __
   }
 
-  koan ("method body") {
+  koan ("brackets around the method body aren't always necessary for simple expressions") {
     def add2(i: Int) = i + 2
 
     add2(2) should __

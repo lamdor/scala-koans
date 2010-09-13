@@ -1,8 +1,6 @@
 Scala Koans
 ==========
 
-* * * * *
-
 ## About the Scala Koans
 Inspired by the Ruby koans, the Scala koans will guide you on your journey to learn Scala.
 

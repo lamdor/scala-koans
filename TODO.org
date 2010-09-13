@@ -16,9 +16,17 @@
     :LOGBOOK:
     - State "DONE"       from "TODO"       [2010-09-06 Mon 18:06]
     :END:
-*** TODO refine topic list
-*** TODO meditate equivalent to pending
+*** DONE meditate equivalent to pending
+    CLOSED: [2010-09-12 Sun 22:36]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-12 Sun 22:36]
+    :END:
 ***** force the student to look at the code
+*** DONE refine topic list
+    CLOSED: [2010-09-12 Sun 22:36]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-12 Sun 22:36]
+    :END:
 *** TODO work through topics
 *** TODO full dist with libs
 *** TODO show file and line number as part of meditation number
