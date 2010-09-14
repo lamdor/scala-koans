@@ -13,7 +13,7 @@ class AboutStructuralTypes extends KoanSuite {
 
     sayHello(p) should be(__)
 
-    case class Person2
+    class Person2
     val p2 = new Person2
     meditate
     //sayHello(p2) should be(__)
