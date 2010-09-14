@@ -28,7 +28,7 @@ class AboutAsserts extends KoanSuite {
     val v1 = 4
     val v2 = 3
 
-    __ should equal(v2)
+    v1 should equal(v2)
   }
 
   koan ("sometimes we expect you to fill in the values") {
