@@ -16,6 +16,8 @@ class Koans extends Suite {
     new AboutStructuralTypes,
     new AboutTraits,
     new AboutEmptyValues,
-    new AboutFunctions
+    new AboutFunctions,
+    new AboutLists,
+    new AboutSequencesAndArrays
   )
 }
