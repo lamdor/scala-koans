@@ -9,6 +9,7 @@ class Koans extends Suite {
     new AboutLiterals,
     new AboutTuples,
     new AboutMethods,
-    new AboutClasses
+    new AboutClasses,
+    new AboutObjects
   )
 }
