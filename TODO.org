@@ -94,7 +94,11 @@
     :LOGBOOK:
     - State "DONE"       from "TODO"       [2010-09-13 Mon 22:29]
     :END:
-*** TODO imports / package
+*** DONE imports / package
+    CLOSED: [2010-09-14 Tue 07:35]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-14 Tue 07:35]
+    :END:
 ***** package of this test is __
 ***** package namespace like with "package {...}"
 ***** imports are relative
@@ -105,6 +109,7 @@
 ***** mixxing in
 ***** constructor order
 ***** method order
+*** TODO implicit definitions
 *** TODO options
 *** functions
 ***** Functions returning functions
