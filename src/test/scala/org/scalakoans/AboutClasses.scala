@@ -112,6 +112,25 @@ class AboutClasses extends KoanSuite {
     (new Cat("Lou")).makeNoise should be("meow")
   }
 
+  koan ("lazy vals") {
+    class Thing {
+      var x = 0
+
+      lazy val longToCompute = {
+        // takes a while
+        x += 1
+        3
+      }
+    }
+
+    val t = new Thing
+    t.x should be(__)
+    t.longToCompute should be(__)
+    t.x should be(__)
+    t.longToCompute should be(__)
+    t.x should be(__)
+  }
+
 
   koan ("lightweight Case classes") {
     case class Cat(name: String)
