@@ -33,7 +33,7 @@ class AboutTraits extends KoanSuite {
     }
 
     trait SaysHelloTwice extends SaysHello {
-      def sayHello = super.sayHello + " " + super.sayHello
+      override def sayHello = super.sayHello + " " + super.sayHello
     }
 
     case class Person(name: String) extends SaysHello with SaysHelloTwice
