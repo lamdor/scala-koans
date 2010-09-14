@@ -64,14 +64,22 @@
     :END:
 ***** tuple assignment
 ***** Pair = Tuple2
-*** TODO methods
+*** DONE methods
+    CLOSED: [2010-09-13 Mon 21:22]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-13 Mon 21:22]
+    :END:
 ***** parameter type declarations
 ***** returns
 ***** return type
 ***** return type necessary if recursive
 ***** nested method
 ***** { } not always necessary
-*** TODO classes
+*** DONE classes
+    CLOSED: [2010-09-13 Mon 22:17]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-13 Mon 22:17]
+    :END:
 ***** creating a class
 ***** constructor
 ***** passing values up to super's constructor
@@ -80,19 +88,24 @@
 ***** memoization
 ***** method override
 ***** visibility
-*** imports / package
+***** case classes
+*** DONE singleton objects
+    CLOSED: [2010-09-13 Mon 22:29]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-13 Mon 22:29]
+    :END:
+*** TODO imports / package
 ***** package of this test is __
 ***** package namespace like with "package {...}"
 ***** imports are relative
-*** singleton objects
-*** collections
-***** array
-******* corresponds to java array
-***** list
-******* immutable
-******* Nil
-***** map
-******* Map of pairs
+*** TODO abstract classes
+*** TODO parameterized/structural types
+*** TODO traits / mixins
+***** defining
+***** mixxing in
+***** constructor order
+***** method order
+*** TODO options
 *** functions
 ***** Functions returning functions
 ***** Functions taking functions
@@ -103,8 +116,14 @@
 ***** dot not always required
 ***** parens not always required
 ***** Method apply
-*** operators
-***** can't be reserved words
+*** collections
+***** array
+******* corresponds to java array
+***** list
+******* immutable
+******* Nil
+***** map
+******* Map of pairs
 *** map, reduce, filter
 *** if expressions
 *** Pattern Matching
@@ -115,19 +134,14 @@
 ***** match on unapply
 ***** match with guards
 ***** binding on nested variables - case p @ Person(first, last)
-*** traits / mixins
-***** defining
-***** mixxing in
-***** constructor order
-***** method order
+***** match on case class
+*** operators
+***** can't be reserved words
 *** currying / partial application / multiple argument lists
 ***** partialing applying a multiple argument func
 ***** partial an instance's method
-*** case classes
-***** match on case class
 *** exceptions and try/catch
 ***** Nothing values
-*** option types
 *** for comprehensions
 *** regular expressions
 ***** match on regular expression
@@ -136,8 +150,6 @@
 ***** while
 ***** do while
 ***** for (i <- 1 to 20)
-*** abstract classes
-***** parameterized types
 *** enumerations
 *** package objects
 *** actors
