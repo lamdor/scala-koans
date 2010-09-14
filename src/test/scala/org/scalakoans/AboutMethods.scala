@@ -105,4 +105,24 @@ class AboutMethods extends KoanSuite {
 
     i should __
   }
+
+  koan ("operators are just methods") {
+    val x = 2
+
+    val i = x + 2
+    i should __
+
+    val j = x.+(3)
+    j should __
+  }
+
+  koan ("methods can be invoked like operators") {
+    val s = "hello"
+    s.length should __
+
+    (s length) should __
+
+    (s contains "x") should __
+  }
+
 }
