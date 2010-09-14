@@ -121,7 +121,11 @@
 ***** mixxing in
 ***** constructor order
 ***** method order
-*** TODO options
+*** DONE options
+    CLOSED: [2010-09-14 Tue 14:04]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-14 Tue 14:04]
+    :END:
 *** functions
 ***** Functions returning functions
 ***** Functions taking functions
