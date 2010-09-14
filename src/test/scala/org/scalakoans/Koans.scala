@@ -7,6 +7,7 @@ class Koans extends Suite {
     new AboutAsserts,
     new AboutValAndVar,
     new AboutLiterals,
-    new AboutTuples
+    new AboutTuples,
+    new AboutMethods
   )
 }
