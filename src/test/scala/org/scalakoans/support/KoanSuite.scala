@@ -19,11 +19,27 @@ trait KoanSuite extends FunSuite with ShouldMatchers {
   }
 
   private class ReportToTheMaster(other: Reporter) extends Reporter {
+    var failed = false
+    def failure(event: Event) {
+      failed = true
+      info("*****************************************")
+      info("*****************************************")
+      info("")
+      info("")
+      info("")
+      info(Master.studentFailed(event))
+      info("")
+      info("")
+      info("")
+      info("*****************************************")
+      info("*****************************************")
+    }
+
     def apply(event: Event) {
       event match {
-        case e: TestIgnored => info(Master.studentFailed(event))
-        case e: TestFailed => info(Master.studentFailed(event))
-        case e: TestPending => info(Master.studentFailed(event))
+        case e: TestIgnored => failure(event)
+        case e: TestFailed => failure(event)
+        case e: TestPending => failure(event)
         case _ =>
       }
       other(event)

@@ -1,8 +1,11 @@
 package org.scalakoans.support
 import org.scalatest.events.Event
+import org.scalatest.Stopper
 
-object Master {
+object Master extends Stopper {
   var studentNeedsToMeditate = false
+
+  override def apply() = studentNeedsToMeditate
 
   type HasTestNameAndSuiteName = {
     val suiteName: String
