@@ -28,8 +28,6 @@ class AboutLiterals extends KoanSuite {
     // sadly no string interpolation
     val str = "%s - %d".format("abc", 123)
     str should __
-
-    __ should not be theSameInstanceAs("abcd")
   }
 
   koan("symbol literals") {
