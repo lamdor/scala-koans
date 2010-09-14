@@ -48,10 +48,10 @@ class AboutMethods extends KoanSuite {
     // add3(2) should be(5)
   }
 
-  koan ("method with a return") {
+  koan ("method without a return") {
     var x = 2
     def add2ToX() {
-      x = x + 2
+      x += 2
     }
 
     add2ToX()
