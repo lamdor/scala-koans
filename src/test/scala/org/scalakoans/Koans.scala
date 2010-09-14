@@ -12,6 +12,7 @@ class Koans extends Suite {
     new AboutClasses,
     new AboutObjects,
     new AboutPackages,
-    new AboutAbstractClasses
+    new AboutAbstractClasses,
+    new AboutStructuralTypes
   )
 }
