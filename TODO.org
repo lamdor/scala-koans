@@ -102,14 +102,25 @@
 ***** package of this test is __
 ***** package namespace like with "package {...}"
 ***** imports are relative
-*** TODO abstract classes
-*** TODO parameterized/structural types
-*** TODO traits / mixins
+*** DONE abstract classes
+    CLOSED: [2010-09-14 Tue 12:46]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-14 Tue 12:46]
+    :END:
+*** DONE parameterized/structural types
+    CLOSED: [2010-09-14 Tue 12:51]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-14 Tue 12:51]
+    :END:
+*** DONE traits / mixins
+    CLOSED: [2010-09-14 Tue 12:59]
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2010-09-14 Tue 12:59]
+    :END:
 ***** defining
 ***** mixxing in
 ***** constructor order
 ***** method order
-*** TODO implicit definitions
 *** TODO options
 *** functions
 ***** Functions returning functions
@@ -130,6 +141,7 @@
 ***** map
 ******* Map of pairs
 *** map, reduce, filter
+*** TODO implicit definitions
 *** if expressions
 *** Pattern Matching
 ***** match on value
