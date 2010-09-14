@@ -142,6 +142,9 @@ class AboutClasses extends KoanSuite {
 
     val anotherLou = Cat("Lou")
     (lou == anotherLou) should __
+
+    val anotherCat = lou.copy(name = "who")
+    anotherCat.name should be(__)
   }
 
 }
