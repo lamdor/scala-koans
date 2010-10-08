@@ -6,6 +6,8 @@ Inspired by the Ruby koans, the Scala koans will guide you on your journey to le
 
 ## How to start your journey
 
+Run `sbt` or `sbt.bat` depending on your platform. Then in the shell run `~koans` and follow the steps.
+
 ## Sources and inspirations
  * Edgecase's ruby_kaons @ http://github.com/edgecase/ruby_koans
  * Relevance's functional-koans @ http://github.com/relevance/functional-koans
