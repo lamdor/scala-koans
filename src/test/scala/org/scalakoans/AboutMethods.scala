@@ -90,12 +90,10 @@ class AboutMethods extends KoanSuite {
     x should __
 
     def add2(i: => Int) = {
-      x should __
       2 + i
-      x should __
     }
 
-    add2(addOneToXAndReturnX)
+    add2(addOneToXAndReturnX) should __
 
     x should __
 
