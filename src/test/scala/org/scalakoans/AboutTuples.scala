@@ -38,7 +38,7 @@ class AboutTuples extends KoanSuite {
     tuple5._1 should be ("a")
     tuple5._2 should __
     tuple5._3 should be (2.2)
-    tuple5._4.before(new Date()) should be (true)
+    tuple5._4.after(new Date()) should be (false)
     __ should be (BigDecimal(5))
   }
 
