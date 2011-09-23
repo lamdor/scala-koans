@@ -18,8 +18,7 @@ class Koans extends Suite {
     new AboutTraits,
     new AboutEmptyValues,
     new AboutFunctions,
-    new AboutLists,
-    new AboutSequencesAndArrays
+    new AboutLists
   )
 
   override def run(testName: Option[String], reporter: Reporter, stopper: Stopper, filter: Filter,
