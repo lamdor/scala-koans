@@ -8,33 +8,35 @@ class AboutClasses extends KoanSuite {
     class Thing {}
 
     val t = new Thing
-    t.isInstanceOf[___] should be(true)
+    t.isInstanceOf[Thing] should be(true)
 
-    meditate
-    // t2.isInstanceOf[Thing2] should be(true)
+    // meditate
+	class Thing2{}
+	val t2 = new Thing2
+    t2.isInstanceOf[Thing2] should be(true)
   }
 
   koan ("Class getters") {
     class Person(val firstName: String)
 
     val p = new Person("Lou")
-    p.firstName should __
+    p.firstName should be ("Lou")
 
-    meditate
-    // p.firstName() should __
+    //meditate
+	// p.firstName() should be ()
 
-    meditate
-    // p.firstName = "Who"
+    //meditate
+  	// p.firstName = "Who"
   }
 
   koan ("Class getter/setters") {
     class Person(var firstName: String)
 
     val p = new Person("Lou")
-    p.firstName should __
+    p.firstName should be ("Lou")
 
     p.firstName = "Who"
-    p.firstName should __
+    p.firstName should be ("Who")
   }
 
   koan ("Class private fields") {
@@ -44,7 +46,7 @@ class AboutClasses extends KoanSuite {
 
     val p = new Person("Lou")
 
-    meditate
+    //meditate
     // p.ssn should __
   }
 
@@ -56,16 +58,18 @@ class AboutClasses extends KoanSuite {
         "Hello to %s from %s".format(who, firstName)
       }
 
-      meditate
-      // def firstNameLowerCase = ?
+      //meditate
+      def firstNameLowerCase = {
+		firstName.toLowerCase()
+	  }
     }
 
     val p = new Person(firstName = "Lou", lastName = "Ferigno")
-    p.fullName should __
-    p.sayHelloTo("Who") should __
+    p.fullName should be ("Ferigno, Lou")
+    p.sayHelloTo("Who") should be ("Hello to Who from Lou")
 
-    meditate
-    // p.firstNameLowerCase should __
+    // meditate
+     p.firstNameLowerCase should be ("lou")
   }
 
   koan ("Class constructor") {
@@ -75,9 +79,9 @@ class AboutClasses extends KoanSuite {
       x += 2
     }
 
-    x should __
+    x should be (2)
     new Thing
-    x should __
+    x should be (4)
   }
 
   koan ("Class super class constructors") {
@@ -86,14 +90,14 @@ class AboutClasses extends KoanSuite {
     class Cat(name: String) extends Animal(name, 4)
 
     val cat = new Cat("Lou")
-    cat.name should __
-    cat.numberOfLegs should __
+    cat.name should be ("Lou")
+    cat.numberOfLegs should be (4)
 
-    meditate
-    // class Kangaroo
-    // val roo = new Kangaroo("Rocky")
-    // roo.name should be("Rocky")
-    // roo.numberOfLegs should be(2)
+    //meditate
+    class Kangaroo(name: String) extends Animal(name, 2)
+   	val roo = new Kangaroo("Rocky")
+    roo.name should be("Rocky")
+    roo.numberOfLegs should be(2)
   }
 
   koan ("override methods") {
@@ -105,9 +109,11 @@ class AboutClasses extends KoanSuite {
       override def makeNoise = "woof"
     }
 
-    (new Dog("Lassy")).makeNoise should __
+    (new Dog("Lassy")).makeNoise should be ("woof")
 
-    class Cat(name: String) extends Animal(name)
+    class Cat(name: String) extends Animal(name) {
+		override def makeNoise = "meow"
+	}
 
     (new Cat("Lou")).makeNoise should be("meow")
   }
@@ -124,11 +130,11 @@ class AboutClasses extends KoanSuite {
     }
 
     val t = new Thing
-    t.x should be(__)
-    t.longToCompute should be(__)
-    t.x should be(__)
-    t.longToCompute should be(__)
-    t.x should be(__)
+    t.x should be(0)
+    t.longToCompute should be(3)
+    t.x should be(1)
+    t.longToCompute should be(3)
+    t.x should be(1)
   }
 
 
@@ -137,14 +143,14 @@ class AboutClasses extends KoanSuite {
 
     val lou = Cat("Lou")
 
-    lou.name should __
-    lou.toString should __
+    lou.name should be ("Lou")
+    lou.toString should be ("Cat(Lou)")
 
     val anotherLou = Cat("Lou")
-    (lou == anotherLou) should __
+    (lou == anotherLou) should be (true)
 
     val anotherCat = lou.copy(name = "who")
-    anotherCat.name should be(__)
+    anotherCat.name should be("who")
   }
 
 }

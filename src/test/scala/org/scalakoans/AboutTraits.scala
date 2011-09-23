@@ -11,7 +11,7 @@ class AboutTraits extends KoanSuite {
 
     class Thing extends SaysHello
 
-    (new Thing).sayHello("Lou") should be(__)
+    (new Thing).sayHello("Lou") should be("hello Lou")
   }
 
   koan ("traits can have abstract members which must be implemented") {
@@ -23,7 +23,7 @@ class AboutTraits extends KoanSuite {
     case class Person(name: String) extends SaysHello
     val p = Person("lou")
 
-    p.sayHello should be(__)
+    p.sayHello should be("hello lou")
   }
 
   koan ("multiple traits can be mixed in") {
@@ -40,11 +40,11 @@ class AboutTraits extends KoanSuite {
 
     val p = Person("lou")
 
-    p.sayHello should be(__)
+    p.sayHello should be("hello lou hello lou")
   }
 
   koan ("traits cannot have a constructor") {
-    meditate
+    // meditate
     // trait SaysHello(name: String) {
     //   def sayHello = "hello " + name
     // }

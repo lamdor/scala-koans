@@ -7,16 +7,16 @@ class AboutPackages extends KoanSuite {
   koan ("packages contain classes and objects") {
      val packageOfThisClass = classOf[AboutPackages].getName.split("\\.").dropRight(1).mkString(".")
 
-     packageOfThisClass should be(__)
+     packageOfThisClass should be("org.scalakoans")
   }
 
   koan ("package namespaces") {
     // package is defined below
     val p = new abc.Person
-    p.isInstanceOf[___] should be(true)
+    p.isInstanceOf[abc.Person] should be(true)
 
     import abc._
-    p.isInstanceOf[___] should be(true)
+    p.isInstanceOf[Person] should be(true)
   }
 
   koan ("imports are relative to existing imports") {
@@ -26,7 +26,7 @@ class AboutPackages extends KoanSuite {
     import evenMoreInside.Animal
 
     val a = new Animal
-    a.isInstanceOf[___] should be(true)
+    a.isInstanceOf[Animal] should be(true)
   }
 
   koan ("import an object's methods") {
@@ -37,7 +37,7 @@ class AboutPackages extends KoanSuite {
 
     import Colors._
 
-    BLUE should be(__)
+    BLUE should be("BLUE")
   }
 
   koan ("importing a variable's methods") {
@@ -47,7 +47,7 @@ class AboutPackages extends KoanSuite {
 
     import person._
 
-    firstName should be(__)
+    firstName should be("Lou")
   }
 }
 
